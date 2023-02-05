@@ -17631,8 +17631,18 @@
   "RootNamespace": "CarvedRock.Admin",
   "Documents": [
     {
+      "FilePath": "d:\\Traing\\carvedrock-admin\\CarvedRock.Admin\\Views\\Products\\Index.cshtml",
+      "TargetPath": "Views\\Products\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Traing\\carvedrock-admin\\CarvedRock.Admin\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Traing\\carvedrock-admin\\CarvedRock.Admin\\Views\\Products\\Details.cshtml",
+      "TargetPath": "Views\\Products\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

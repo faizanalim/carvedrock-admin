@@ -38,3 +38,5 @@ D:\Traing\carvedrock-admin\CarvedRock.Admin\obj\Debug\net5.0\ref\CarvedRock.Admi
 D:\Traing\carvedrock-admin\CarvedRock.Admin\obj\Debug\net5.0\CarvedRock.Admin.pdb
 D:\Traing\carvedrock-admin\CarvedRock.Admin\obj\Debug\net5.0\CarvedRock.Admin.genruntimeconfig.cache
 D:\Traing\carvedrock-admin\CarvedRock.Admin\obj\Debug\net5.0\CarvedRock.Admin.csproj.CopyComplete
+D:\Traing\carvedrock-admin\CarvedRock.Admin\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
+D:\Traing\carvedrock-admin\CarvedRock.Admin\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
