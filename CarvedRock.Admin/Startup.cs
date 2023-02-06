@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CarvedRock.Admin.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,11 +26,25 @@ namespace CarvedRock.Admin
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<ProductContext>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+           
+           using (var scope = app.ApplicationServices.CreateScope())
+{
+    var services = scope.ServiceProvider;
+   var ctx = services.GetRequiredService<ProductContext>();
+  ctx.Database.Migrate();
+    
+    if (env.IsDevelopment())
+    {
+        ctx.SeedInitialData();
+    }
+}
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
